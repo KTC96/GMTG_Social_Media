@@ -52,7 +52,46 @@ body:
     id: proton-drive-link
     attributes:
       label: Proton Drive Link
-      description: Link to the folder or specific file.
       placeholder: "https://drive.proton.me/urls/..."
 
   - type: input
+    id: canva-link
+    attributes:
+      label: Canva Design Link
+      placeholder: "https://www.canva.com/design/..."
+
+  - type: input
+    id: date-created
+    attributes:
+      label: Date Added/Created
+      placeholder: "YYYY-MM-DD"
+
+  - type: input
+    id: post-date
+    attributes:
+      label: Date of When to Post
+      placeholder: "YYYY-MM-DD"
+
+  - type: input
+    id: post-time
+    attributes:
+      label: Time Posted
+      placeholder: "e.g., 18:00 GMT"
+
+  - type: textarea
+    id: collaborators
+    attributes:
+      label: Potential Collaborators
+      placeholder: "List accounts or organizations for easy reference..."
+
+  - type: textarea
+    id: hashtags
+    attributes:
+      label: Template Hashtags
+      value: "#FreePalestine #GazaUpdate #EndTheOccupation"
+
+  - type: textarea
+    id: analytics
+    attributes:
+      label: Post Analytics
+      placeholder: "Reach: \nShares: \nSaves: \nComments:"
