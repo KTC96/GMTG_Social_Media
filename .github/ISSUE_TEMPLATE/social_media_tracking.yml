@@ -26,6 +26,7 @@ body:
       label: Type of Post
       description: Select the format of the content.
       options:
+        - "Pick an option"
         - Image
         - Carousel
         - Reel
@@ -39,6 +40,7 @@ body:
       label: Topic Area & Objectives
       description: What is the primary goal of this post?
       options:
+        - "Pick an option"
         - "1. Calls to Action (CTAs): Mobilize, donate, or contact reps"
         - "2. Coverage of Events: Real-time or next-day visuals"
         - "3. Amplifying Palestinian Voices: Testimonies and art"
@@ -61,3 +63,22 @@ body:
   - type: input
     id: date-created
     attributes:
+      label: Date Added/Created
+      placeholder: "YYYY-MM-DD"
+
+  - type: input
+    id: post-date
+    attributes:
+      label: Date of When to Post
+      placeholder: "YYYY-MM-DD"
+
+  - type: input
+    id: post-time
+    attributes:
+      label: Time Posted
+      placeholder: "e.g., 18:00 GMT"
+
+  - type: textarea
+    id: collaborators
+    attributes:
+      label:
