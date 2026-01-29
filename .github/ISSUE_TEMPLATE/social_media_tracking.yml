@@ -1,0 +1,87 @@
+name: Social Media Content Tracking
+description: Plan and track social media posts for the movement.
+title: "📱 POST: <Brief description of content>"
+labels: ["social-media", "content-tracking"]
+body:
+  - type: checkboxes
+    id: status-checklist
+    attributes:
+      label: Production Status
+      options:
+        - label: Content copy written
+        - label: Content created (Visuals/Video)
+        - label: Social media caption written
+    validations:
+      required: false
+
+  - type: dropdown
+    id: post-type
+    attributes:
+      label: Type of Post
+      description: Select the format of this post.
+      options:
+        - Image
+        - Carousel
+        - Reel
+        - Repost
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic-area
+    attributes:
+      label: Topic Area & Objectives
+      description: Describe the focus of the content.
+      placeholder: |
+        Examples: 
+        1. CTAs: Mobilize for protest/donations.
+        2. Event Coverage: Real-time visuals from rallies.
+        3. Palestinian Voices: Testimonies and art.
+        4. Updates: Milestones or developments from Gaza.
+    validations:
+      required: true
+
+  - type: input
+    id: date-created
+    attributes:
+      label: Date Added/Created
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: input
+    id: post-date
+    attributes:
+      label: Scheduled Posting Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: input
+    id: post-time
+    attributes:
+      label: Time Posted
+      placeholder: "e.g., 14:00 GMT"
+    validations:
+      required: false
+
+  - type: textarea
+    id: collaborators
+    attributes:
+      label: Potential Collaborators
+      description: List organizations or creators to tag/collaborate with.
+      placeholder: "@user1, @organization_account"
+
+  - type: textarea
+    id: hashtags
+    attributes:
+      label: Template Hashtags
+      description: Copy/paste standard hashtag blocks here.
+      value: "#FreePalestine #GazaUpdate #StandWithPalestine"
+
+  - type: textarea
+    id: analytics
+    attributes:
+      label: Post Analytics
+      description: Record performance (Reach, Shares, Saves) after posting.
+      placeholder: "Reach: \nShares: \nSaves: \nComments:"
