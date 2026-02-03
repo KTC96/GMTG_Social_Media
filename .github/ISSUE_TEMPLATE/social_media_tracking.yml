@@ -10,7 +10,30 @@ body:
         Please use the **Labels** section in the right-hand sidebar to select:
         1. **Post Type** (Image, Carousel, Reel, or Repost)
         2. **Priority Level**
-  
+        
+        *If you need any help understanding, ask Kyle.*
+
+  - type: input
+    id: date-created
+    attributes:
+      label: Date Added/Created
+      description: When was this idea or request logged?
+      placeholder: "YYYY-MM-DD"
+
+  - type: dropdown
+    id: topic-area
+    attributes:
+      label: Topic Area & Objectives
+      description: What is the primary goal of this post?
+      options:
+        - "Pick an option"
+        - "1. Calls to Action (CTAs): Mobilize, donate, or contact reps"
+        - "2. Coverage of Events: Real-time or next-day visuals"
+        - "3. Amplifying Palestinian Voices: Testimonies and art"
+        - "4. Movement Updates & News: Key developments from Gaza"
+    validations:
+      required: true
+
   - type: checkboxes
     id: status-checklist
     attributes:
@@ -34,19 +57,19 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: topic-area
+  - type: textarea
+    id: post-copywriting
     attributes:
-      label: Topic Area & Objectives
-      description: What is the primary goal of this post?
-      options:
-        - "Pick an option"
-        - "1. Calls to Action (CTAs): Mobilize, donate, or contact reps"
-        - "2. Coverage of Events: Real-time or next-day visuals"
-        - "3. Amplifying Palestinian Voices: Testimonies and art"
-        - "4. Movement Updates & News: Key developments from Gaza"
-    validations:
-      required: true
+      label: Post Copywriting
+      description: Draft the text/information that will be inside the graphics or video here.
+      placeholder: "Enter the text for the actual content here..."
+
+  - type: textarea
+    id: social-media-caption
+    attributes:
+      label: Social Media Caption
+      description: Draft the caption that will go in the post description.
+      placeholder: "Write the Instagram/TikTok/Twitter caption here..."
 
   - type: input
     id: proton-drive-link
@@ -60,35 +83,36 @@ body:
       label: Canva Design Link
       placeholder: "https://www.canva.com/design/..."
 
-  - type: input
-    id: date-created
+  - type: textarea
+    id: collaborators
     attributes:
-      label: Date Added/Created
-      placeholder: "YYYY-MM-DD"
+      label: Potential Collaborators
+      description: Reference pool for tags and outreach.
+      value: |
+        celebrities4palestine, toritsui_, call2actionnow, airbyart, lisamoorish, 
+        higherlove_withmegan, katnippresents, xrebellionuk(climate related only), 
+        cocktailsandcapitalism
+
+  - type: textarea
+    id: hashtags
+    attributes:
+      label: Template Hashtags
+      description: Standard hashtag blocks to include.
+      value: "#SailToGaza #GlobalSumudFlotilla #BreakTheSiege #GlobalMovementToGaza"
 
   - type: input
     id: post-date
     attributes:
       label: Date of When to Post
+      description: Scheduled publishing date.
       placeholder: "YYYY-MM-DD"
 
   - type: input
     id: post-time
     attributes:
       label: Time Posted
+      description: Specific time it went live.
       placeholder: "e.g., 18:00 GMT"
-
-  - type: textarea
-    id: collaborators
-    attributes:
-      label: Potential Collaborators
-      placeholder: "List accounts or organizations for easy reference..."
-
-  - type: textarea
-    id: hashtags
-    attributes:
-      label: Template Hashtags
-      value: "#FreePalestine #GazaUpdate #EndTheOccupation"
 
   - type: textarea
     id: analytics
