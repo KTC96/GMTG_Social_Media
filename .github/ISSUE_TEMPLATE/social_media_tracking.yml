@@ -3,6 +3,15 @@ description: Plan and track social media posts using sidebar labels and external
 title: "📱 POST: <Brief description>"
 labels: ["social-media", "priority: Medium", "status: To Do"]
 body:
+
+-type: textarea
+id: description
+attributes:
+  label: Description
+  description: Outline the idea for content here.
+  
+  
+
   - type: checkboxes
     id: status-checklist
     attributes:
