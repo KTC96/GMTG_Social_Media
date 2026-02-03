@@ -1,7 +1,3 @@
-I’ve reorganized the entire flow to match your exact sequence. I also integrated the specific "Approved" and "Posted" checkboxes into the production status and updated the instructions to point toward the bottom of the screen for labels.
-
-Updated social_media_tracking.yml
-YAML
 name: Social Media Content Tracking
 description: Plan and track social media posts using sidebar labels and external links.
 title: "📱 POST: <Brief description>"
@@ -28,7 +24,7 @@ body:
   - type: dropdown
     id: topic-area
     attributes:
-      label: Topic Area & Objectives
+      label: Area and Objective
       description: What is the primary goal of this post?
       options:
         - "Pick an option"
@@ -65,7 +61,7 @@ body:
     attributes:
       label: Social Media Caption
       description: Draft the caption here. This MUST include relevant hashtags.
-      placeholder: "Write the Instagram/TikTok/Twitter caption here..."
+      placeholder: "Write the caption here..."
 
   - type: textarea
     id: hashtags
@@ -78,7 +74,7 @@ body:
     id: collaborators
     attributes:
       label: Potential Collaborators
-      description: Reference pool for tags and outreach. If you want to update or add to this list, let Kyle know.
+      description: If you want to update or add to this list, let Kyle know.
       value: |
         celebrities4palestine, toritsui_, call2actionnow, airbyart, lisamoorish, 
         higherlove_withmegan, katnippresents, xrebellionuk(climate related only), 
