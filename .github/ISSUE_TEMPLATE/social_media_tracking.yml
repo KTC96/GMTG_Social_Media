@@ -1,3 +1,9 @@
+The "expected '-' indicator" error is happening because of a few tiny indentation slips in the YAML—specifically around the boilerplate section where the id and attributes aren't aligned with the rest of the file. YAML is like a sensitive set of dominoes; if one is slightly out of line, the whole thing falls.
+
+I have cleaned up the spacing and ensured the Caption Boilerplate link is correctly formatted.
+
+Fixed social_media_tracking.yml
+YAML
 name: Social Media Content Tracking
 description: Plan and track social media posts using sidebar labels and external links.
 title: "📱 POST: <Brief description>"
@@ -57,12 +63,11 @@ body:
       placeholder: "Enter the text for the actual content here..."
 
   - type: input
-  id: boilerplate
-  attributes:
-    label: Caption Boilerplate
-    description: Follow the link to see some of the information to be included in the caption
-    value: "https://docs.proton.me/u/11/doc?mode=open-url&token=4RE8XSM7XR&linkId=mSQNlGgaRXDCmlUqCFghhzzi04csxWzL-UDEyqlJS1I9MEGaVr1AlRBgw2XFqPibKVZWXbLSx5-ffRXRt2_d1Q%3D%3D#xySVze8keh5P"
-    
+    id: boilerplate
+    attributes:
+      label: Caption Boilerplate
+      description: Follow the link to see some of the information to be included in the caption.
+      value: "https://docs.proton.me/u/11/doc?mode=open-url&token=4RE8XSM7XR&linkId=mSQNlGgaRXDCmlUqCFghhzzi04csxWzL-UDEyqlJS1I9MEGaVr1AlRBgw2XFqPibKVZWXbLSx5-ffRXRt2_d1Q%3D%3D#xySVze8keh5P"
 
   - type: textarea
     id: social-media-caption
@@ -116,7 +121,8 @@ body:
     attributes:
       value: |
         ---
-        **Note:** At the bottom of this screen you can add labels. - Label needed for content type
+        **Note:** At the bottom of this screen (right sidebar), you can add labels.
+        *Label needed for content type.*
         *Priority will be dictated by the social media lead.*
         
         If you need any help understanding, ask Kyle.
