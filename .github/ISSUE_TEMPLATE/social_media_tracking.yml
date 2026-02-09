@@ -8,6 +8,8 @@ body:
     attributes:
       label: Description
       description: Outline the idea for content here.
+      validations:
+      required: true
 
   - type: checkboxes
     id: status-checklist
@@ -26,6 +28,8 @@ body:
       label: Date Added/Created
       description: When was this idea or request logged?
       placeholder: "YYYY-MM-DD"
+      validations:
+      required: true
 
   - type: dropdown
     id: topic-area
