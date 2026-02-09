@@ -8,7 +8,7 @@ body:
     attributes:
       label: Description
       description: Outline the idea for content here.
-      validations:
+    validations:
       required: true
 
   - type: checkboxes
@@ -28,7 +28,7 @@ body:
       label: Date Added/Created
       description: When was this idea or request logged?
       placeholder: "YYYY-MM-DD"
-      validations:
+    validations:
       required: true
 
   - type: dropdown
@@ -106,27 +106,4 @@ body:
   - type: input
     id: canva-link
     attributes:
-      label: Canva Design Link
-      placeholder: "https://www.canva.com/design/..."
-
-  - type: input
-    id: post-date
-    attributes:
-      label: Date of When to Post
-      placeholder: "YYYY-MM-DD"
-
-  - type: input
-    id: post-time
-    attributes:
-      label: Time Posted
-      placeholder: "e.g., 18:00 GMT"
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        **Note:** At the bottom of this screen (right sidebar), you can add labels.
-        *Label needed for content type.*
-        *Priority will be dictated by the social media lead.*
-        
-        If you need any help understanding, ask Kyle.
+      label: Canva
