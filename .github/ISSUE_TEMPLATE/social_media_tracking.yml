@@ -11,26 +11,7 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
-    id: status-checklist
-    attributes:
-      label: Production Status
-      options:
-        - label: Content copy written
-        - label: Content created (Visuals/Video)
-        - label: Social media caption written
-        - label: APPROVED
-        - label: POSTED
-
-  - type: input
-    id: date-created
-    attributes:
-      label: Date Added/Created
-      description: When was this idea or request logged?
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: true
-
+ 
   - type: dropdown
     id: topic-area
     attributes:
@@ -59,19 +40,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: post-copywriting
-    attributes:
-      label: Post Copywriting
-      description: Draft the text/information that will be inside the graphics or video here.
-      placeholder: "Enter the text for the actual content here..."
-
-  - type: input
-    id: boilerplate
-    attributes:
-      label: Caption Boilerplate
-      description: Follow the link to see some of the information to be included in the caption.
-      value: "https://docs.proton.me/u/11/doc?mode=open-url&token=4RE8XSM7XR&linkId=mSQNlGgaRXDCmlUqCFghhzzi04csxWzL-UDEyqlJS1I9MEGaVr1AlRBgw2XFqPibKVZWXbLSx5-ffRXRt2_d1Q%3D%3D#xySVze8keh5P"
 
   - type: textarea
     id: social-media-caption
@@ -85,7 +53,7 @@ body:
     attributes:
       label: Template Hashtags
       description: Standard hashtag blocks to include.
-      value: "#SailToGaza #GlobalSumudFlotilla #BreakTheSiege #GlobalMovementToGaza"
+      value: "#GlobalSumudFlotilla #HumanitarianAid #MaritimeMission #WorldNewsToday #FreedomFlotilla"
 
   - type: textarea
     id: collaborators
@@ -95,15 +63,17 @@ body:
       value: |
         celebrities4palestine, toritsui_, call2actionnow, airbyart, lisamoorish, 
         higherlove_withmegan, katnippresents, xrebellionuk (climate related only), 
-        cocktailsandcapitalism, greens4palestine
+        cocktailsandcapitalism, greens4palestine, For general posts add one of the other delegationse e.g. france_globalsumud.
+
+
+
+  - type: input
+    id: canva work in progress link
+    attributes:
+      label: Canva
 
   - type: input
     id: proton-drive-link
     attributes:
       label: Proton Drive Link
       placeholder: "https://drive.proton.me/urls/..."
-
-  - type: input
-    id: canva-link
-    attributes:
-      label: Canva
