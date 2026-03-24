@@ -11,7 +11,6 @@ body:
     validations:
       required: true
 
- 
   - type: dropdown
     id: topic-area
     attributes:
@@ -40,7 +39,6 @@ body:
     validations:
       required: true
 
-
   - type: textarea
     id: social-media-caption
     attributes:
@@ -63,14 +61,13 @@ body:
       value: |
         celebrities4palestine, toritsui_, call2actionnow, airbyart, lisamoorish, 
         higherlove_withmegan, katnippresents, xrebellionuk (climate related only), 
-        cocktailsandcapitalism, greens4palestine, For general posts add one of the other delegationse e.g. france_globalsumud.
-
-
+        cocktailsandcapitalism, greens4palestine, For general posts add one of the other delegations e.g. france_globalsumud.
 
   - type: input
-    id: canva work in progress link
+    id: canva-link
     attributes:
       label: Canva
+      placeholder: "Link to Canva design..."
 
   - type: input
     id: proton-drive-link
